@@ -1,0 +1,160 @@
+/* =============================================
+   Kaliszuk Kancelaria – Shared Stylesheet
+   ============================================= */
+
+/* Scroll offset for sticky nav (h-20 = 80px) */
+html { scroll-padding-top: 80px; }
+
+/* Last orphan card in 3-col services grid: centre it */
+.services-grid .service-card:last-child:nth-child(3n+1) {
+  grid-column: 2;
+}
+
+/* Base */
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+}
+
+body {
+  background-color: #fdf9f2;
+  color: #1c1c17;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+/* Skip link */
+.skip-link {
+  position: absolute;
+  top: -100%;
+  left: 0;
+  background: #000000;
+  color: #ffffff;
+  padding: 0.75rem 1.5rem;
+  z-index: 9999;
+  font-size: 12px;
+  font-family: Montserrat, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  text-decoration: none;
+}
+.skip-link:focus {
+  top: 0;
+}
+
+/* Focus styles */
+:focus-visible {
+  outline: 2px solid #000000;
+  outline-offset: 2px;
+}
+
+/* Mobile menu */
+#mobile-menu {
+  transform: translateX(100%);
+  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+#mobile-menu.active {
+  transform: translateX(0);
+}
+.no-scroll {
+  overflow: hidden;
+}
+
+/* Hero overlay — warm-shifted black for harmony with cream #fdf9f2 */
+.hero-overlay {
+  background: linear-gradient(to bottom, rgba(14,10,5,0.30), rgba(14,10,5,0.68));
+}
+
+/* Hero scroll hint — replaces Tailwind animate-bounce (AI tell) */
+.hero-scroll-hint {
+  animation: heroScrollHint 2.4s ease-in-out infinite;
+}
+@keyframes heroScrollHint {
+  0%, 100% { transform: translateX(-50%) translateY(0);   opacity: 0.45; }
+  50%       { transform: translateX(-50%) translateY(7px); opacity: 0.70; }
+}
+
+/* Testimonials carousel */
+.testimonial-slide {
+  display: none;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+.testimonial-slide.active {
+  display: block;
+  opacity: 1;
+}
+
+/* Timeline (o-kancelarii) */
+.timeline-track::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 1px;
+  background: #c4c7c7;
+}
+@media (max-width: 768px) {
+  .timeline-track::before { left: 4px; }
+}
+
+/* Editorial overlay (zakres-uslug) */
+.editorial-overlay {
+  background: linear-gradient(to bottom, rgba(14,10,5,0) 0%, rgba(14,10,5,0.58) 100%);
+}
+
+/* Hover lift (zakres-uslug) */
+.hover-lift {
+  transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+@media (min-width: 1024px) {
+  .hover-lift:hover { transform: translateY(-8px); }
+}
+
+/* FAQ accordion (faq) */
+details > summary::-webkit-details-marker {
+  display: none;
+}
+details[open] summary .icon-add {
+  transform: rotate(45deg);
+}
+.icon-add {
+  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  display: inline-block;
+}
+
+/* Form validation states */
+input[aria-invalid="true"],
+textarea[aria-invalid="true"],
+select[aria-invalid="true"] {
+  border-color: #ba1a1a !important;
+}
+.field-error {
+  color: #ba1a1a;
+  font-size: 12px;
+  margin-top: 4px;
+  display: none;
+}
+.field-error.visible {
+  display: block;
+}
+#form-success,
+#form-error {
+  display: none;
+  padding: 1rem 1.25rem;
+  margin-bottom: 1.5rem;
+  font-size: 14px;
+  border-left: 3px solid;
+}
+#form-success.visible {
+  display: block;
+  background: #d7e3d7;
+  color: #141e17;
+  border-color: #566158;
+}
+#form-error.visible {
+  display: block;
+  background: #ffdad6;
+  color: #93000a;
+  border-color: #ba1a1a;
+}

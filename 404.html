@@ -1,0 +1,86 @@
+﻿<!DOCTYPE html>
+<html lang="pl" class="scroll-smooth">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Strona nie znaleziona – Kowalczyk Kancelaria Radcy Prawnego</title>
+<meta name="robots" content="noindex, nofollow"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="assets/css/main.css"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script src="assets/js/tailwind-config.js"></script>
+</head>
+<body class="font-body-md text-body-md bg-surface text-on-surface min-h-screen flex flex-col">
+
+<!-- Navigation -->
+<nav class="bg-surface/90 backdrop-blur-md sticky top-0 z-50 border-b border-outline/10 transition-all duration-300">
+  <div class="flex justify-between items-center h-20 w-full px-6 md:px-gutter max-w-container-max mx-auto">
+    <a href="index.html" class="text-xl md:text-headline-md font-headline-md font-light tracking-[0.1em] text-primary uppercase">
+      KOWALCZYK <span class="font-semibold">KANCELARIA</span>
+    </a>
+    <div class="hidden lg:flex items-center gap-10">
+      <a class="text-on-surface-variant hover:text-primary transition-colors duration-300 text-label-caps uppercase tracking-widest" href="index.html">STRONA GŁÓWNA</a>
+      <a class="text-on-surface-variant hover:text-primary transition-colors duration-300 text-label-caps uppercase tracking-widest" href="o-kancelarii.html">O KANCELARII</a>
+      <a class="text-on-surface-variant hover:text-primary transition-colors duration-300 text-label-caps uppercase tracking-widest" href="zakres-uslug.html">ZAKRES USŁUG</a>
+      <a class="text-on-surface-variant hover:text-primary transition-colors duration-300 text-label-caps uppercase tracking-widest" href="faq.html">FAQ</a>
+      <a class="text-on-surface-variant hover:text-primary transition-colors duration-300 text-label-caps uppercase tracking-widest" href="kontakt.html">KONTAKT</a>
+    </div>
+    <button aria-label="Otwórz menu" aria-expanded="false" aria-controls="mobile-menu" class="lg:hidden flex items-center justify-center w-11 h-11 text-primary" id="menu-toggle">
+      <span class="material-symbols-outlined text-3xl">menu</span>
+    </button>
+  </div>
+</nav>
+
+<!-- Mobile Menu -->
+<div class="fixed inset-0 z-[60] bg-surface flex flex-col pt-24 px-10 lg:hidden" id="mobile-menu" role="dialog" aria-modal="true" aria-label="Menu nawigacyjne" aria-hidden="true">
+  <button aria-label="Zamknij menu" class="absolute top-6 right-6 text-primary w-11 h-11 flex items-center justify-center" id="menu-close">
+    <span class="material-symbols-outlined text-3xl">close</span>
+  </button>
+  <div class="flex flex-col gap-8">
+    <a class="text-xl font-label-caps uppercase tracking-[0.2em] text-on-surface-variant" href="index.html">STRONA GŁÓWNA</a>
+    <a class="text-xl font-label-caps uppercase tracking-[0.2em] text-on-surface-variant" href="o-kancelarii.html">O KANCELARII</a>
+    <a class="text-xl font-label-caps uppercase tracking-[0.2em] text-on-surface-variant" href="zakres-uslug.html">ZAKRES USŁUG</a>
+    <a class="text-xl font-label-caps uppercase tracking-[0.2em] text-on-surface-variant" href="faq.html">FAQ</a>
+    <a class="text-xl font-label-caps uppercase tracking-[0.2em] text-on-surface-variant" href="kontakt.html">KONTAKT</a>
+  </div>
+  <div class="mt-auto pb-12">
+    <a href="kontakt.html" class="block w-full bg-primary text-on-primary py-5 font-bold text-label-caps uppercase tracking-[0.2em] text-center">UMÓW KONSULTACJĘ</a>
+  </div>
+</div>
+
+<main id="main-content" class="flex-grow flex items-center justify-center px-6 py-24">
+  <div class="text-center max-w-xl mx-auto">
+    <p class="text-[120px] md:text-[180px] font-display-lg text-primary/10 leading-none select-none" aria-hidden="true">404</p>
+    <h1 class="text-display-lg-mobile font-display-lg text-primary mb-6 -mt-8 md:-mt-12">Strona nie istnieje</h1>
+    <p class="text-body-md md:text-body-lg text-on-surface-variant mb-12 leading-relaxed">
+      Szukana strona mogła zostać przeniesiona lub usunięta. Zapraszamy na stronę główną lub skontaktuj się z nami bezpośrednio.
+    </p>
+    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+      <a href="index.html" class="bg-primary text-on-primary px-10 py-4 font-bold text-label-caps uppercase tracking-[0.2em] hover:bg-neutral-800 transition-all text-center">
+        Strona główna
+      </a>
+      <a href="kontakt.html" class="border border-primary text-primary px-10 py-4 font-bold text-label-caps uppercase tracking-[0.2em] hover:bg-surface-container transition-all text-center">
+        Kontakt
+      </a>
+    </div>
+  </div>
+</main>
+
+<!-- Footer -->
+<footer class="bg-primary pt-12 pb-8 border-t border-white/5">
+  <div class="max-w-container-max mx-auto px-6 md:px-gutter flex flex-col md:flex-row justify-between items-center gap-6">
+    <p class="text-[10px] text-on-primary/40 uppercase tracking-[0.2em] text-center md:text-left">© 2025 Kancelaria Radcy Prawnego Marta Kowalczyk. Wszelkie prawa zastrzeżone.</p>
+    <p class="text-[10px] text-on-primary/30 uppercase tracking-[0.2em] text-center md:text-left mt-2">Strona demonstracyjna — dane fikcyjne</p>
+    <div class="flex flex-wrap justify-center gap-8 text-[10px] text-on-primary/40 uppercase tracking-[0.2em]">
+      <a class="hover:text-on-primary transition-colors" href="privacy-policy.html">Polityka Prywatności</a>
+      <a class="hover:text-on-primary transition-colors" href="legal-notice.html">Nota Prawna</a>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/main.js" defer></script>
+</body>
+</html>

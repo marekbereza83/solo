@@ -1,0 +1,8 @@
+# Screenshoty robocze (tylko z katalogu głównego)
+/Zrzut ekranu_*.jpeg
+/Zrzut ekranu_*.jpg
+/Zrzut ekranu_*.png
+
+# Foldery robocze (nie potrzebne na serwerze)
+/Design for AI/
+/genereted scripts/
